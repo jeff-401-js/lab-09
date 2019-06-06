@@ -35,6 +35,10 @@ app.use(v1Router);
 app.use(notFound);
 app.use(errorHandler);
 
+/**
+ * Export object with app and start method attached
+ * @type {Object}
+ */
 
 let start = (port = process.env.PORT) => {
   app.listen(port, () => {

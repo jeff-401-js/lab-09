@@ -3,6 +3,18 @@
 const Model = require('../mongo-model.js');
 const schema = require('./players-schema.js');
 
+/**
+ * 
+ * 
+ * @module src/models/players/players-model
+ * write something
+ */
+
+/**
+ * @typedef players-model
+ * @property {class} - class extends from model
+ */
+
 class Players extends Model {}
 
 module.exports = new Players(schema);

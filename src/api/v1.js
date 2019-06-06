@@ -26,6 +26,42 @@ router.param('model', modelFinder);
  * @returns {Object} 200 - { count: 2, results: [{}, {}]}
  */
 
+/**
+ * Creates a list of records for model provided
+ * @route POST /{model}
+ * @param {string} model.path.required - Resource model name
+ * @consumes application/json application/xml
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count: 2, results: [{}, {}]}
+ */
+
+/**
+ * Get a list of records for model id provided
+ * @route GET /{model}/{id}
+ * @param {string} model.path.required - Resource model name
+ * @param {number} id.path.required - Resource model name
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count: 2, results: [{}, {}]}
+ */
+
+/**
+ * Modifies of records for model provided
+ * @route PUT /{model}/{id}
+ * @param {string} model.path.required - Resource model name
+ * @param {number} id.path.required - Resource model name
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count: 2, results: [{}, {}]}
+ */
+
+/**
+ * Deletes records for model provided
+ * @route DELETE /{model}/{id}
+ * @param {string} model.path.required - Resource model name
+ * @param {number} id.path.required - Resource model name
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count: 2, results: [{}, {}]}
+ */
+
 // API Routes
 router.get('/api/v1/:model', handleGetAll);
 router.post('/api/v1/:model', handlePost);
@@ -74,5 +110,10 @@ function handleDelete(request,response,next) {
     .then( result => response.status(200).json(result) )
     .catch( next );
 }
+
+/**
+ * Export object with app and start method attached
+ * @type {Object}
+ */
 
 module.exports = router;
