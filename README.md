@@ -7,7 +7,7 @@ Jeff
 ### Links and Resources
 * [submission PR](https://github.com/JeffLawrence1/lab-09/pull/1)
 * [travis](https://www.travis-ci.com/jeff-401-js/lab-09)
-* [heroku](http://xyz.com)
+* [heroku](https://protected-falls-82183.herokuapp.com/)
 
 
 #### Documentation
@@ -18,10 +18,9 @@ Jeff
 ### Modules
 
 #### `modulename.js`
-index.js
+
 ##### Exported Values and Methods
-fileFunc -> creates loop.js and passes through function
-fileWriter -> takes txt input and outputs html
+
 
 ### Setup
 #### `.env` requirements
