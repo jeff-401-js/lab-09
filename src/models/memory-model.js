@@ -96,7 +96,7 @@ class Model {
   /**
    * @method put
    * @param {string} id - Id for specific entries
-   * @param {string} record - information for what should be added
+   * @param {string} record - information for what should be added/changed
    * @desc Modify one item in database
    */
 
