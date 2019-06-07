@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: src/models/memory-model</title>
+    <title>JSDoc: Module: src/models/mongo-model</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: src/models/memory-model</h1>
+    <h1 class="page-title">Module: src/models/mongo-model</h1>
 
     
 
@@ -45,7 +45,7 @@
     
 
     
-    <h4 class="name" id="module:src/models/memory-model"><span class="type-signature"></span>module:src/models/memory-model<span class="type-signature"> :Object</span></h4>
+    <h4 class="name" id="module:src/models/mongo-model"><span class="type-signature"></span>module:src/models/mongo-model<span class="type-signature"> :Object</span></h4>
     
 
     
@@ -97,7 +97,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line117">line 117</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line74">line 74</a>
     </li></ul></dd>
     
 
@@ -139,7 +139,7 @@
         <h3 class="subsection-title">Classes</h3>
 
         <dl>
-            <dt><a href="module-src_models_memory-model-Memory%2520Model.html">Memory Model</a></dt>
+            <dt><a href="module-src_models_mongo-model-Mongo%2520Model.html">Mongo Model</a></dt>
             <dd></dd>
         </dl>
     
@@ -161,7 +161,7 @@
     
 
     
-    <h4 class="name" id="~constructor"><span class="type-signature">(inner) </span>constructor<span class="signature">(schema)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~constructor"><span class="type-signature">(inner) </span>constructor<span class="signature">(schema, schema)</span><span class="type-signature"></span></h4>
     
 
     
@@ -207,7 +207,7 @@
             <td class="type">
             
                 
-<span class="param-type">categories</span>
+<span class="param-type">players</span>
 
 
             
@@ -217,7 +217,30 @@
 
             
 
-            <td class="description last">schema from categories</td>
+            <td class="description last">schema from players</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>schema</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">teams</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">schema from teams</td>
         </tr>
 
     
@@ -258,7 +281,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line16">line 16</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line14">line 14</a>
     </li></ul></dd>
     
 
@@ -294,7 +317,7 @@
     
 
     
-    <h4 class="name" id="~count"><span class="type-signature">(inner) </span>count<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~delete"><span class="type-signature">(inner) </span>delete<span class="signature">(_id)</span><span class="type-signature"></span></h4>
     
 
     
@@ -302,95 +325,7 @@
 
 
 <div class="description">
-    Keep count of what is in db
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line53">line 53</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~delete"><span class="type-signature">(inner) </span>delete<span class="signature">(id)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Delete item from the database
+    Delete an item out of database
 </div>
 
 
@@ -426,7 +361,7 @@
 
         <tr>
             
-                <td class="name"><code>id</code></td>
+                <td class="name"><code>_id</code></td>
             
 
             <td class="type">
@@ -483,7 +418,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line86">line 86</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line57">line 57</a>
     </li></ul></dd>
     
 
@@ -519,7 +454,7 @@
     
 
     
-    <h4 class="name" id="~get"><span class="type-signature">(inner) </span>get<span class="signature">(id)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~get"><span class="type-signature">(inner) </span>get<span class="signature">(_id)</span><span class="type-signature"></span></h4>
     
 
     
@@ -563,7 +498,7 @@
 
         <tr>
             
-                <td class="name"><code>id</code></td>
+                <td class="name"><code>_id</code></td>
             
 
             <td class="type">
@@ -620,7 +555,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line62">line 62</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line24">line 24</a>
     </li></ul></dd>
     
 
@@ -664,7 +599,7 @@
 
 
 <div class="description">
-    Add a record to the database
+    Add an item to the database
 </div>
 
 
@@ -757,7 +692,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line73">line 73</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line35">line 35</a>
     </li></ul></dd>
     
 
@@ -793,7 +728,7 @@
     
 
     
-    <h4 class="name" id="~put"><span class="type-signature">(inner) </span>put<span class="signature">(id, record)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~put"><span class="type-signature">(inner) </span>put<span class="signature">(_id, record)</span><span class="type-signature"></span></h4>
     
 
     
@@ -837,7 +772,7 @@
 
         <tr>
             
-                <td class="name"><code>id</code></td>
+                <td class="name"><code>_id</code></td>
             
 
             <td class="type">
@@ -917,144 +852,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line97">line 97</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="~sanitize"><span class="type-signature">(inner) </span>sanitize<span class="signature">(entry)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Sanitize entry
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>entry</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Entry to be sanitized</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line26">line 26</a>
+        <a href="models_mongo-model.js.html">models/mongo-model.js</a>, <a href="models_mongo-model.js.html#line46">line 46</a>
     </li></ul></dd>
     
 

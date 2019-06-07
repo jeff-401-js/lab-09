@@ -14,6 +14,7 @@ const uuid = require('uuid/v4');
 class Model {
 
   /**
+   * @method constructor
    * @param {categories} schema - schema from categories
    */
 

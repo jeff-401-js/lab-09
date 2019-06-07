@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: models/mongo-model.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,92 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: models/mongo-model.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
 
+/**
+* @module src/models/mongo-model
+*/
 
-    <h3> </h3>
+/**
+ * @Class Mongo Model
+ * @desc Mongo model for get, post, put, and delete requests
+ */
 
+class Model {
 
+  /**
+   * @method constructor
+   * @param {players} schema - schema from players
+   * @param {teams} schema - schema from teams
+   */
 
+  constructor(schema) {
+    this.schema = schema;
+  }
 
+  /**
+   * @method get
+   * @param {string} _id - Id for specific entries
+   * @desc Get one or all items from database
+   */
 
+  get(_id) {
+    let queryObject = _id ? {_id} : {};
+    return this.schema.find(queryObject);
+  }
+  
+  /**
+   * @method post
+   * @param {string} record - information for what should be added
+   * @desc Add an item to the database
+   */
 
+  post(record) {
+    let newRecord = new this.schema(record);
+    return newRecord.save();
+  }
 
+  /**
+   * @method put
+   * @param {string} _id - Id for specific entries
+   * @param {string} record - information for what should be added/changed
+   * @desc Modify one item in database
+   */
 
+  put(_id, record) {
+    return this.schema.findByIdAndUpdate(_id, record, {new:true});
+  }
 
+  /**
+   * @method delete
+   * @param {string} _id - Id for specific entries
+   * @desc Delete an item out of database
+   */
 
-    
+  delete(_id) {
+    return this.schema.findByIdAndDelete(_id);
+  }
 
+}
 
+/**
+ * Export object
+ * @type {Object}
+ */
 
-
-
+module.exports = Model;
+</code></pre>
+        </article>
+    </section>
 
 
 

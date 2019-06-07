@@ -12,6 +12,7 @@
 class Model {
 
   /**
+   * @method constructor
    * @param {players} schema - schema from players
    * @param {teams} schema - schema from teams
    */
