@@ -17,9 +17,13 @@ const errorHandler = require( `${cwd}/src/middleware/500.js`);
 const notFound = require( `${cwd}/src/middleware/404.js` );
 const v1Router = require( `${cwd}/src/api/v1.js` );
 
-require('../docs/config/swagger');
+
 // Prepare the express app
 const app = express();
+
+const options = require('../docs/config/swagger');
+const expressSwagger = require('express-swagger-generator')(app);
+expressSwagger(options);
 
 // App Level MW
 app.use(cors());
