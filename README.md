@@ -7,21 +7,16 @@ Jeff
 ### Links and Resources
 * [submission PR](https://github.com/JeffLawrence1/lab-09/pull/1)
 * [travis](https://www.travis-ci.com/jeff-401-js/lab-09)
-* [heroku](http://xyz.com)
+* [heroku](https://protected-falls-82183.herokuapp.com/)
 
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [UML](https://www.lucidchart.com/documents/view/c55fe5b8-a690-4b11-afd0-3d0bd79b8dd9/0)
 
 ### Modules
-
-#### `modulename.js`
-index.js
-##### Exported Values and Methods
-fileFunc -> creates loop.js and passes through function
-fileWriter -> takes txt input and outputs html
+categories
+players
+teams
 
 ### Setup
 #### `.env` requirements
@@ -29,17 +24,12 @@ fileWriter -> takes txt input and outputs html
 * `MONGODB_URI` - mongodb://localhost:27017/class-09
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* `nodemon index.js`
+* Endpoint: `/api/v1/:model/`
+  * Either get or post to get all or add one.
+* Endpoint: `//api/v1/:model/:id/`
+  * Either get, put or delete to get one, update one or delete one.
   
 #### Tests
 * How do you run tests?
-npm test
-* What assertions were made?
-do they do what they say they do
-* What assertions need to be / should be made?
-
-#### UML
+npm test `filename.test.js`
