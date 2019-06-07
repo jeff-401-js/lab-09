@@ -17,7 +17,7 @@ const schema = {
 };
 
 /**
- * @typedef categories-model
+ * @Class Categories Model
  * @property {class} - class extends from model
  */
 

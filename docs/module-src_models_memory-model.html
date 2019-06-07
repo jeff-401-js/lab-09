@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Module: src/api/v1</title>
+    <title>JSDoc: Module: src/models/memory-model</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Module: src/api/v1</h1>
+    <h1 class="page-title">Module: src/models/memory-model</h1>
 
     
 
@@ -31,8 +31,6 @@
         
             
         
-            
-        
     
 </header>
 
@@ -40,85 +38,6 @@
     <div class="container-overview">
     
         
-            <div class="description">API Router Module (V1)
-Integrates with various models through a common Interface (.get(), .post(), .put(), .delete())</div>
-        
-
-        
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line3">line 3</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         
             
@@ -126,7 +45,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="module:src/api/v1"><span class="type-signature"></span>module:src/api/v1<span class="type-signature"> :Object</span></h4>
+    <h4 class="name" id="module:src/models/memory-model"><span class="type-signature"></span>module:src/models/memory-model<span class="type-signature"> :Object</span></h4>
     
 
     
@@ -178,7 +97,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line157">line 157</a>
+        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line112">line 112</a>
     </li></ul></dd>
     
 
@@ -217,6 +136,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
+        <h3 class="subsection-title">Classes</h3>
+
+        <dl>
+            <dt><a href="module-src_models_memory-model-Memory%2520Model.html">Memory Model</a></dt>
+            <dd></dd>
+        </dl>
+    
 
     
 
@@ -235,7 +161,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleDelete"><span class="type-signature">(inner) </span>handleDelete<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~count"><span class="type-signature">(inner) </span>count<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
@@ -243,7 +169,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handles delete route
+    Keep count of what is in db
 </div>
 
 
@@ -252,101 +178,6 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>request</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">request object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>response</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -382,7 +213,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line138">line 138</a>
+        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line48">line 48</a>
     </li></ul></dd>
     
 
@@ -418,7 +249,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleGetAll"><span class="type-signature">(inner) </span>handleGetAll<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~delete"><span class="type-signature">(inner) </span>delete<span class="signature">(id)</span><span class="type-signature"></span></h4>
     
 
     
@@ -426,7 +257,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handles get all route call
+    Delete item from the database
 </div>
 
 
@@ -462,13 +293,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">string</span>
 
 
             
@@ -478,53 +309,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>response</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">Id for specific entries</td>
         </tr>
 
     
@@ -565,7 +350,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line76">line 76</a>
+        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line81">line 81</a>
     </li></ul></dd>
     
 
@@ -601,7 +386,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handleGetOne"><span class="type-signature">(inner) </span>handleGetOne<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~get"><span class="type-signature">(inner) </span>get<span class="signature">(id)</span><span class="type-signature"></span></h4>
     
 
     
@@ -609,7 +394,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handles get one call
+    Get one or all items from database
 </div>
 
 
@@ -645,13 +430,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">string</span>
 
 
             
@@ -661,53 +446,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>response</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">Id for specific entries</td>
         </tr>
 
     
@@ -748,7 +487,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line96">line 96</a>
+        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line57">line 57</a>
     </li></ul></dd>
     
 
@@ -784,7 +523,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handlePost"><span class="type-signature">(inner) </span>handlePost<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~post"><span class="type-signature">(inner) </span>post<span class="signature">(record)</span><span class="type-signature"></span></h4>
     
 
     
@@ -792,7 +531,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handles post route
+    Add a record to the database
 </div>
 
 
@@ -828,13 +567,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>record</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">string</span>
 
 
             
@@ -844,53 +583,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>response</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">information for what should be added</td>
         </tr>
 
     
@@ -931,7 +624,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line110">line 110</a>
+        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line68">line 68</a>
     </li></ul></dd>
     
 
@@ -967,7 +660,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
 
     
-    <h4 class="name" id="~handlePut"><span class="type-signature">(inner) </span>handlePut<span class="signature">(request, response, next)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="~put"><span class="type-signature">(inner) </span>put<span class="signature">(id, record)</span><span class="type-signature"></span></h4>
     
 
     
@@ -975,7 +668,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
 
 <div class="description">
-    Middleware that handles put route
+    Modify one item in database
 </div>
 
 
@@ -1011,13 +704,13 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
         <tr>
             
-                <td class="name"><code>request</code></td>
+                <td class="name"><code>id</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">string</span>
 
 
             
@@ -1027,20 +720,20 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">request object</td>
+            <td class="description last">Id for specific entries</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>response</code></td>
+                <td class="name"><code>record</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">object</span>
+<span class="param-type">string</span>
 
 
             
@@ -1050,30 +743,7 @@ Integrates with various models through a common Interface (.get(), .post(), .put
 
             
 
-            <td class="description last">response object</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>next</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">function</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">calls next middleware</td>
+            <td class="description last">information for what should be added</td>
         </tr>
 
     
@@ -1114,7 +784,144 @@ Integrates with various models through a common Interface (.get(), .post(), .put
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="api_v1.js.html">api/v1.js</a>, <a href="api_v1.js.html#line124">line 124</a>
+        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line92">line 92</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="~sanitize"><span class="type-signature">(inner) </span>sanitize<span class="signature">(entry)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Sanitize entry
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>entry</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Entry to be sanitized</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="models_memory-model.js.html">models/memory-model.js</a>, <a href="models_memory-model.js.html#line21">line 21</a>
     </li></ul></dd>
     
 

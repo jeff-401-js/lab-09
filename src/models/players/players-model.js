@@ -8,7 +8,7 @@ const schema = require('./players-schema.js');
  */
 
 /**
- * @typedef players-model
+ * @Class Players Model
  * @property {class} - class extends from model
  */
 

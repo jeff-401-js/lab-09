@@ -9,7 +9,7 @@ const schema = require('./teams-schema.js');
 
 
 /**
- * @typedef teams-model
+ * @Class Teams Model
  * @property {class} - class extends from model
  */
 
