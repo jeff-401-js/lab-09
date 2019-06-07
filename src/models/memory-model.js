@@ -8,10 +8,14 @@ const uuid = require('uuid/v4');
 
 /**
  * @Class Memory Model
- * @desc memory model for get, post, put, and delete requests to database for categories 
+ * @desc memory model for count, get, post, delete, and put requests
  */
 
 class Model {
+
+  /**
+   * @param {categories} schema - schema from categories
+   */
 
   constructor(schema) {
     this.schema = schema;

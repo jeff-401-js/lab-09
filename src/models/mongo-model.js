@@ -1,6 +1,20 @@
 'use strict';
 
+/**
+* @module src/models/mongo-model
+*/
+
+/**
+ * @Class Mongo Model
+ * @desc Mongo model for get, post, put, and delete requests
+ */
+
 class Model {
+
+  /**
+   * @param {players} schema - schema from players
+   * @param {teams} schema - schema from teams
+   */
 
   constructor(schema) {
     this.schema = schema;
