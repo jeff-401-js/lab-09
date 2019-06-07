@@ -77,7 +77,7 @@ router.delete('/api/v1/:model/:id', handleDelete);
    * @function handleGetAll
    * @param {object} request - request object
    * @param {object} response - response object
-   * @param {function} next - next function which calls next middleware
+   * @param {function} next - calls next middleware
    * @desc Middleware that handles get all route call
    */
 
@@ -97,8 +97,8 @@ function handleGetAll(request,response,next) {
    * @function handleGetOne
    * @param {object} request - request object
    * @param {object} response - response object
-   * @param {function} next - next function which calls next middleware
-   * @desc Middleware that handles get one route call
+   * @param {function} next - calls next middleware
+   * @desc Middleware that handles get one call
    */
 
 function handleGetOne(request,response,next) {
@@ -111,7 +111,7 @@ function handleGetOne(request,response,next) {
    * @function handlePost
    * @param {object} request - request object
    * @param {object} response - response object
-   * @param {function} next - next function which calls next middleware
+   * @param {function} next - calls next middleware
    * @desc Middleware that handles post route
    */
 
@@ -125,15 +125,23 @@ function handlePost(request,response,next) {
    * @function handlePut
    * @param {object} request - request object
    * @param {object} response - response object
-   * @param {function} next - next function which calls next middleware
+   * @param {function} next - calls next middleware
    * @desc Middleware that handles put route
    */
-  
+
 function handlePut(request,response,next) {
   request.model.put(request.params.id, request.body)
     .then( result => response.status(200).json(result) )
     .catch( next );
 }
+
+/**
+   * @function handleDelete
+   * @param {object} request - request object
+   * @param {object} response - response object
+   * @param {function} next - calls next middleware
+   * @desc Middleware that handles delete route
+   */
 
 function handleDelete(request,response,next) {
   request.model.delete(request.params.id)
@@ -142,7 +150,7 @@ function handleDelete(request,response,next) {
 }
 
 /**
- * Export object with app and start method attached
+ * Export object
  * @type {Object}
  */
 
