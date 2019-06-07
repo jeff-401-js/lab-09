@@ -3,8 +3,6 @@
 const Model = require('../memory-model.js');
 
 /**
- * API Router Module (V1)
- * Integrates with various models through a common Interface (.get(), .post(), .put(), .delete())
  * @module src/models/categories/categories-model
  */
 
@@ -18,6 +16,16 @@ const schema = {
   name: {required:true},
 };
 
+/**
+ * @typedef categories-model
+ * @property {class} - class extends from model
+ */
+
 class Categories extends Model {}
+
+/**
+ * Export object
+ * @type {Object}
+ */
 
 module.exports = new Categories(schema);

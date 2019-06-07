@@ -4,10 +4,7 @@ const Model = require('../mongo-model.js');
 const schema = require('./players-schema.js');
 
 /**
- * 
- * 
  * @module src/models/players/players-model
- * write something
  */
 
 /**
@@ -16,6 +13,11 @@ const schema = require('./players-schema.js');
  */
 
 class Players extends Model {}
+
+/**
+ * Export object
+ * @type {Object}
+ */
 
 module.exports = new Players(schema);
 
