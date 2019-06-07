@@ -11,16 +11,12 @@ Jeff
 
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+* [UML](https://www.lucidchart.com/documents/view/c55fe5b8-a690-4b11-afd0-3d0bd79b8dd9/0)
 
 ### Modules
-
-#### `modulename.js`
-
-##### Exported Values and Methods
-
+categories
+players
+teams
 
 ### Setup
 #### `.env` requirements
@@ -28,18 +24,12 @@ Jeff
 * `MONGODB_URI` - mongodb://localhost:27017/class-09
 
 #### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* `nodemon index.js`
+* Endpoint: `/api/v1/:model/`
+  * Either get or post to get all or add one.
+* Endpoint: `//api/v1/:model/:id/`
+  * Either get, put or delete to get one, update one or delete one.
   
 #### Tests
 * How do you run tests?
-npm test
-* What assertions were made?
-do they do what they say they do
-* What assertions need to be / should be made?
-
-#### UML
-* [UML](https://www.lucidchart.com/documents/view/c55fe5b8-a690-4b11-afd0-3d0bd79b8dd9/0)
+npm test `filename.test.js`
